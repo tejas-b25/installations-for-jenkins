@@ -5,7 +5,7 @@ sudo apt install -y docker.io curl
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo usermod -aG docker ubuntu
-
+newgrp docker
  
 mkdir -p ~/.docker/cli-plugins
 curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 \
@@ -49,7 +49,7 @@ sudo apt install -y nodejs
 sudo npm install -g @angular/cli@17
 
 
-sudo newgrp docker
+
 
 
 
